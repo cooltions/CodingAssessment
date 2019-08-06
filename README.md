@@ -7,6 +7,12 @@ It is up to you to manage your time.
 
 ### Testing remotely
 If you are testing off site please ensure you **commit** to the local git repo **often** to show progress and workflow. Ensure the comments explain **why** you did the change.
+To submit your solution:
+ 1. Ensure you have commited all your changes
+ 2. Run `git clean -xdf`
+ 3. Compress the solution source into a single archive
+    i. Ensure the .git folder is oncluded in the archive
+ 4. Email on through!
 
 ### Working with legacy code
 This will asses your ability to critique legacy code and improve it.
