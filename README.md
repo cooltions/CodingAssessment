@@ -11,10 +11,10 @@ To submit your solution:
  1. Ensure you have commited all your changes
  2. Run `git clean -xdf`
  3. Compress the solution source into a single archive
-    i. Ensure the .git folder is oncluded in the archive
+    i. Ensure the .git folder is included in the archive
  4. Email on through!
 
-### Working with legacy code
+### Excersise 1: Working with legacy code
 This will asses your ability to critique legacy code and improve it.
 Feel free to provide:
  - `/* inline comments */`
@@ -25,7 +25,7 @@ or all of the above, remember you will have to explain yourself later,
 so make sure we can see any of the before and after changes you make.
 Open the [CodingAssessment solution](.\CodingAssessment.sln)
 
-### Clean green fields project
+### Excersise 2: Clean green fields project
 > As an enthusiastic card player and developer</br>
 I want to create a program to play cards against the computer</br>
 So that when I am bored I can play some card games against an intelligent opponent.
