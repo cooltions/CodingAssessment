@@ -47,7 +47,7 @@ namespace Review
         /// <returns>List<object></returns>
         public List<People> GetPeople(int i)
         {
-            for (int j = 0; j < i; j++)
+            for (int j = 0; j < i; j++) //Where i how many people are wanted to be created for the list.
             {
                 try
                 {
@@ -65,7 +65,7 @@ namespace Review
                 }
                 catch (Exception e)
                 {
-                    // Don't think this should ever happen
+                    // Don't think this should ever happen.
                     throw new Exception("Something failed in user creation: " + e);
                 }
             }
@@ -74,7 +74,9 @@ namespace Review
 
         private IEnumerable<People> GetBobs(bool olderThan30)
         {
-            return olderThan30 ? _people.Where(x => x.Name == "Bob" && x.DOB >= DateTime.Now.Subtract(new TimeSpan(30 * 356, 0, 0, 0))) : _people.Where(x => x.Name == "Bob");
+            //The code below uses '>=', so age 30 will also be included. Also looks like another 356-365 typo.
+            //Also strings should be compared with example.Equals("") rather than '=='.
+            return olderThan30 ? _people.Where(x => x.Name.Equals("Bob") && x.DOB >= DateTime.Now.Subtract(new TimeSpan(30 * 365, 0, 0, 0))) : _people.Where(x => x.Name.Equals("Bob"));
         }
 
         public string GetMarried(People p, string lastName)
