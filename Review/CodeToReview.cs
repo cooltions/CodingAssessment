@@ -33,10 +33,11 @@ namespace Review
         /// MaxItemsToRetrieve
         /// </summary>
         private List<People> _people;
+        //_people is understood to be a private implementation for what's to be a public property, by general convention.
 
-        public BirthingUnit()
+        public BirthingUnit() //Constructor.
         {
-            _people = new List<People>();
+            _people = new List<People>(); //Understood to be creating an empty list of 'People' class type.
         }
 
         /// <summary>
