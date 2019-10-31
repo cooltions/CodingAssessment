@@ -12,6 +12,9 @@ namespace Review
         public string Name { get; private set; }
         public DateTimeOffset DOB { get; private set; }
 
+        /*- There should not be parameters for this subclass.
+          - Appears to be a logical error, there is no constructor that just exclusively
+            takes a string for a parameter.  */
         public People(string name) : this(name, Under16.Date)
         {
         }
