@@ -14,8 +14,10 @@ namespace Review
 
         /* This is not a subclass, but looks like an alternative constructor that inherits
            a date-offset if the dob is not passed through. */
-        public People(string name) : this(name, Under16.Date)
+        public People(string name)
         {
+            Name = name;
+            DOB = Under16.Date;
         }
 
         public People(string name, DateTime dob)
