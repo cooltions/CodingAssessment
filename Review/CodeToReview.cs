@@ -65,8 +65,8 @@ namespace Review
                 }
                 catch (Exception e)
                 {
-                    // Dont think this should ever happen
-                    throw new Exception("Something failed in user creation");
+                    // Don't think this should ever happen
+                    throw new Exception("Something failed in user creation: " + e);
                 }
             }
             return _people;
