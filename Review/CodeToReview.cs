@@ -81,14 +81,16 @@ namespace Review
 
         public string GetMarried(People p, string lastName)
         {
+            string marriedName = "";
             if (lastName.Contains("test"))
-                return p.Name;
-            if ((p.Name.Length + lastName).Length > 255)
+                return p.Name; //Just returns if the lastName parameter is just a "test", or anything that contains "test".
+            if ((p.Name.Length + lastName.Length) < 255) //Looks like a bug, looks like we should be adding both lengths as integers for the conditional.
+                //Also think it should be < rather than > as we want to fit the name within the specified 255 length below.
             {
-                (p.Name + " " + lastName).Substring(0, 255);
+                marriedName = (p.Name + " " + lastName).Substring(0, 255); //Saving the concatenated name into a local string.
             }
 
-            return p.Name + " " + lastName;
+            return marriedName; //Reusing code from before.
         }
     }
 }
