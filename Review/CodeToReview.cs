@@ -61,7 +61,7 @@ namespace Review
                         name = "Betty";
                     }
                     // Adds new people to the list
-                    _people.Add(new People(name, DateTime.UtcNow.Subtract(new TimeSpan(random.Next(18, 85) * 356, 0, 0, 0))));
+                    _people.Add(new People(name, DateTime.UtcNow.Subtract(new TimeSpan(random.Next(18, 85) * 365, 0, 0, 0))));
                 }
                 catch (Exception e)
                 {
